@@ -9,6 +9,9 @@ void setup() {
 
   Serial.begin(115200);
   Serial.println("started");
+
+  SerialUSB.begin(115200);
+  SerialUSB.println("USB");
 }
 
 
@@ -22,4 +25,5 @@ void loop() {
   delay(250);
 
   Serial.print(".");
+  SerialUSB.println("*");
 }
